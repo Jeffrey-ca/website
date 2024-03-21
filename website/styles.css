@@ -1,0 +1,328 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Settings */
+html {
+    font-size: 16px;
+    /* Static font size for better control */
+}
+
+body {
+    font-family: 'Merriweather', sans-serif;
+    line-height: 1.6;
+    background: url('images/leaf.jpg') no-repeat center center;
+    background-size: cover;
+    color: #333333;
+    padding: 1% 3%;
+    text-align: center;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+
+h1 {
+    font-size: 6rem;
+    margin: 0.2em 0;
+    color: #4F2F24;
+    text-align: left;
+    padding-left: 50px;
+    
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 3rem;
+    margin: 0.5em 0;
+    color: #4F2F24;
+    font-weight: normal;
+}
+
+p {
+    font-size: 1.75rem;
+    color:#333333;
+    font-family: 'Sans Serif', Arial, sans-serif;
+    text-align: left;
+    padding-left: 20px;
+    /* Matches body font size for consistency */
+}
+
+/* Header */
+header {
+    background: url('images/wood.jpg');
+    color: #4F2F24;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+/* Main Content */
+main {
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+.main-top {
+    background-color: rgb(1, 66, 1); /* Your chosen shade of green */
+    /* Other styles for main-top */
+}
+
+.main-top h2 {
+    color: white;
+}
+
+.main-bottom {
+    background: url('images/wood.jpg') no-repeat center center;
+    background-size: cover;
+    /* Other styles for main-bottom */
+}
+
+.main-bottom p {
+    color: #333333;
+}
+
+
+main p {
+    text-align: left;
+    font-family: 'Sans Serif', Arial, sans-serif;
+    padding-left: 20px;
+    color: white;
+}
+
+/* About Us Section */
+.about-us-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.about-us-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-us-image {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    /* Adjust as needed */
+}
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.contact-info,
+.contact-us-form,
+.inquiry-box {
+    flex: 1;
+    min-width: 300px;
+    padding: 10px;
+}
+
+/* Inquiry Form */
+#inquiryForm {
+    padding: 20px;
+    background: #333333;
+    border: 1px solid url('images/wood.jpg');
+}
+
+#inquiryForm input[type=text],
+#inquiryForm input[type=email],
+#inquiryForm input[type=tel],
+#inquiryForm textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid url('images/wood.jpg');
+}
+
+#inquiryForm button {
+    background-color: #007bff;
+    color: url('images/wood.jpg');
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#inquiryForm button:hover {
+    background-color: #0056b3;
+}
+
+/* Flex Containers */
+.flex-container,
+.form-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.flex-container>div,
+.image-container {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Gallery */
+.gallery-labels,
+.gallery-container {
+    text-align: center;
+    color: #A5D6A7;
+}
+
+.gallery-container,
+.gallery-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 24px;
+}
+
+.gallery-controls button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Darker on hover */
+}
+
+.gallery-controls button.prev {
+    position: abesolut;
+    left: -50px;
+    /* Move the left arrow outwards */
+}
+
+.gallery-controls button.next {
+    position: flex;
+    right: -50px;
+    /* Move the right arrow outwards */
+}
+
+.gallery-controls {
+    position: flex;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* Ensure controls span the width of the gallery */
+}
+
+.gallery-row img {
+    max-width: 45%;
+    margin: 0 10px;
+}
+
+/* Ensure the flex-container is set up for a flex layout */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Specific styles for the "About Us" text to ensure it takes up only the necessary space */
+#services {
+    flex: 1;
+    padding-right: 20px;
+    /* Adds some spacing between the text and the image */
+}
+
+/* Styles for the image container to make sure the image is on the right */
+.image-container {
+    flex: 1;
+    /* No specific padding needed here unless you want to control the spacing around the image */
+}
+
+.image-container img {
+    width: 100%;
+    /* Make the image responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Footer */
+footer {
+    color: #A5D6A7;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    position: relative;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+
+    .about-us-container,
+    .flex-container,
+    .form-row {
+        flex-direction: column;
+    }
+
+    .about-us-text,
+    .about-us-image {
+        width: 100%;
+    }
+
+    .about-us-image {
+        height: 200px;
+        /* Smaller height on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .gallery-row img {
+        max-width: 90%;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+#slideshow {
+    width: 600px; /* Adjust based on your needs */
+    height: 400px; /* Adjust based on your needs */
+    overflow: hidden;
+    position: relative;
+}
+
+#slideshow img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

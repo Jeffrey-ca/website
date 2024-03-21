@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stump Removal LLC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>STUMP REMOVAL LLC</h1>
+    </header>
+    <main>
+        <div class="main-top">
+            <div class="flex-container">
+                <section id="services">
+                    <h2><strong>ABOUT US</strong></h2>
+                    <p></strong>Stump Removal LLC specializes in the efficient removal of unwanted tree stumps from
+                        <strong>residential
+                            properties</strong>. Our team is equipped with state-of-the-art stump grinders that can
+                        access spaces as
+                        narrow as 36 inches, ensuring no stump is unreachable. We pride ourselves on being a
+                        <strong>fully insured</strong>
+                        company, guaranteeing the safety and satisfaction of our clients. With a commitment to
+                        excellence,
+                        we offer <strong>free estimates</strong> to tailor our services to your specific needs, ensuring
+                        a seamless and
+                        professional experience. Trust us to leave your property pristine, enhancing its appeal and
+                        safety.
+                    </p>
+                </section>
+                <div class="image-container">
+                    <img src="images/during_extra.jpg" style="width:100%;">
+                </div>
+            </div>
+        </div>
+        <div class="main-bottom">
+            <!-- Gallery Section -->
+            <h2 id="gallery"><strong>OUR WORK</strong></h2>
+
+
+            <div class="gallery-container">
+                <!-- Navigation Controls -->
+                <div class="gallery-controls">
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <div class="gallery-row" style="display: none;">
+                        <img src="images/3_before.jpg" alt="Project 3 Before" class="fade-in">
+                        <img src="images/3_after.jpg" alt="Project 3 After" class="fade-in">
+                    </div>
+                    <div class="gallery-row" style="display: none;">
+                        <img src="images/1_before.jpg" alt="Project 1 Before" class="fade-in">
+                        <img src="images/1_after.jpg" alt="Project 1 After" class="fade-in">
+                    </div>
+                    <div class="gallery-row" style="display: none;">
+                        <img src="images/4_before.jpg" alt="Project 4 Before" class="fade-in">
+                        <img src="images/4_after.jpg" alt="Project 4 After" class="fade-in">
+                    </div>
+                    <div class="gallery-row" style="display: none;">
+                        <img src="images/2_before.jpg" alt="Project 2 Before" class="fade-in">
+                        <img src="images/2_after.jpg" alt="Project 2 After" class="fade-in">
+                    </div>
+                    <div class="gallery-row" style="display: none;">
+                        <img src="images/5_before.jpg" alt="Project 2 Before" class="fade-in">
+                        <img src="images/5_after.jpg" alt="Project 2 After" class="fade-in">
+                    </div>
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                </div>
+                <!-- Gallery Rows for Projects -->
+                <!-- Simplified for demonstration. Add your actual image paths -->
+
+                <!-- Repeat for other projects -->
+            </div>
+
+            <!-- Contact Information Section -->
+            <div class="flex-container reverse">
+                <div class="image-container">
+                    <img src="images/after_Extra.jpg" style="width:100%;">
+                </div>
+                <div>
+                    <section id="contact-info">
+                        <h2><strong>CONTACT INFORMATION</strong></h2>
+                        <p><strong>Email:</strong> <a
+                                href="mailto:StumpRemovalLLC@gmail.com?subject=Inquiry&body=Hi%2C%20I'm%20interested%20in%20your%20services.">StumpRemovalLLC@gmail.com</a>
+                        </p>
+                        <p><strong>Phone:</strong> (716) 449-0414</p>
+                    </section>
+
+                    <!-- Contact Us Form -->
+                    <section id="inquiry">
+                        <h2><strong>CONTACT US</strong></h2>
+                        <form id="inquiryForm" action="submit_form.php" method="post">
+                            <div class="form-row">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                            </div>
+                            <textarea id="message" name="message" placeholder="Type your message here..."
+                                required></textarea>
+                            <input type="submit" value="Send Inquiry">
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Stump Removal LLC</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="script1.js"></script>
+</body>
+
+</html>
